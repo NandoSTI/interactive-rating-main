@@ -1,0 +1,18 @@
+:root{
+    --primary-orange-color: hsl(25, 97%, 53%);
+    --white-color: hsl(0, 0%, 100%);
+    --lightGrey-color: hsl(217, 12%, 63%);
+    --mediumGrey-color:hsl(216, 12%, 54%);
+    --darkBlue-color: hsl(213, 20%, 22%);
+    --darkBlue-color-star: hsl(212, 15%, 25%);
+    --veryDarkBlue-color: hsl(216, 12%, 8%);
+}
+
+:root{
+    --font-title-h2-desktop: 28px;
+    --font-title-h2-mobile: 24px;
+}
+
+:root{
+    --font-main: 'Overpass', sans-serif;
+}

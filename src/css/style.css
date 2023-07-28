@@ -1,0 +1,159 @@
+body{
+    font-size: 62.5%;
+    font-family: var(--font-main);
+}
+
+.container{
+    background-color: var(--veryDarkBlue-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.container .card{
+    background-color: var(--darkBlue-color);
+    border-radius: 15px;
+    padding: 24px;
+}
+
+
+.container .card.hide{
+    display: none;
+}
+
+.container .card .card__icon{
+    width: 40px;
+    height: 40px;
+    background-color: var(--darkBlue-color-star);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.container .card .card__icon img{
+    width: 14px;
+}
+
+.container .card .card__title{
+    color: var(--white-color);
+    margin-bottom: 17px;
+}
+
+.container .card .card__paragraph{
+    color: var(--lightGrey-color);
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.container .card .card__rating{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card .card__rating .card__rating-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkBlue-color-star);
+    color: var(--mediumGrey-color);
+    font-size: 1rem;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    transition: all .3s ease-in-out;
+}
+
+.container .card .card__rating .card__rating-number:hover{
+    background-color: var(--primary-orange-color);
+    color: var(--white-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container .card .card__rating-number.active{
+    background-color: var(--mediumGrey-color);
+    color: var(--white-color);
+}
+
+.container .card__btn{
+    background-color: var(--primary-orange-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    height: 45px;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+}
+
+.container .card__btn:hover{
+    background-color: var(--white-color);
+    color: var(--primary-orange-color);
+    cursor: pointer;
+}
+
+
+.container .card.second--card{
+    text-align: center;
+}
+
+.container .card.second--card img{
+    width: 144px;
+    padding-top: 20px;
+}
+
+
+.container .card.second--card .card__result{
+    color: var(--primary-orange-color);
+    background-color: var(--darkBlue-color-star);
+    font-size: 14px;
+    border-radius: 20px;
+    width: 160px;
+    height: 32px;
+    line-height: 32px;
+    margin: auto;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.container .card.second--card .card__title{
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.container .card.second--card .card__paragraph{
+    font-size: 12.2px;
+    line-height: 1.1rem;
+}
+
+@media (min-width: 600px)
+{
+  .container .card{
+    max-width: 412px;
+  }
+
+  .container .card.second--card img{
+    width: 162px;
+  }
+
+  .container .card.second--card .card__title{
+    font-size: 28px;
+  }
+
+  .container .card.second--card .card__paragraph{
+    font-size: 16px;
+  }
+
+  .container .card .card__title{
+    font-size: 28px;
+  }
+
+}
